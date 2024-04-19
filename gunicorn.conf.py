@@ -11,7 +11,7 @@ threads = multiprocessing.cpu_count() * 2
 # 设置监听端口
 bind = '0.0.0.0:8080'
 # 设置守护进程, 使用Docker时无需设置
-daemon = True
+# daemon = True
 # 设置Worker模式
 worker_class = 'gevent'
 # 设置最大并发量
