@@ -16,8 +16,8 @@ bind = '0.0.0.0:8080'
 worker_class = 'gevent'
 # 设置最大并发量
 worker_connections = 2000
-# 设置进程文件目录
-pidfile = '/var/run/gunicorn.pid'
+# 设置进程文件目录, 服务器权限可能会有问题
+# pidfile = '/var/run/gunicorn.pid'
 # 设置访问日志和错误信息日志路径
 accesslog = './log/gunicorn_access.log'
 errorlog = './log/gunicorn_error.log'
